@@ -9,8 +9,11 @@ import SwiftUI
 
 struct navbar_public_view: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan, Color.green, Color.mint,Color.red]),
+                       startPoint: .topLeading,
+                       endPoint: .bottomTrailing)
+        .ignoresSafeArea(.all, edges:.all)
+        }
 }
 
 struct navbar_public_view_Previews: PreviewProvider {
