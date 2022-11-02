@@ -19,6 +19,7 @@
 		2A26E90E2911DC2200B3D7BE /* navbar-home-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26E90D2911DC2200B3D7BE /* navbar-home-view.swift */; };
 		2A26E9102911DC9700B3D7BE /* navbar-profile-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26E90F2911DC9700B3D7BE /* navbar-profile-view.swift */; };
 		2A26E9122911DCAF00B3D7BE /* navbar-public-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26E9112911DCAF00B3D7BE /* navbar-public-view.swift */; };
+		2A3E64F9291225DD00E5ED96 /* navbar-call-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2A26E90D2911DC2200B3D7BE /* navbar-home-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "navbar-home-view.swift"; sourceTree = "<group>"; };
 		2A26E90F2911DC9700B3D7BE /* navbar-profile-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "navbar-profile-view.swift"; sourceTree = "<group>"; };
 		2A26E9112911DCAF00B3D7BE /* navbar-public-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "navbar-public-view.swift"; sourceTree = "<group>"; };
+		2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "navbar-call-view.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				2A26E90B2911DC0800B3D7BE /* navbar-sun-view.swift */,
 				2A26E90F2911DC9700B3D7BE /* navbar-profile-view.swift */,
 				2A26E9112911DCAF00B3D7BE /* navbar-public-view.swift */,
+				2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */,
 				2A26E8E32906534600B3D7BE /* Assets.xcassets */,
 				2A26E8E52906534600B3D7BE /* Preview Content */,
 			);
@@ -276,6 +279,7 @@
 				2A26E9122911DCAF00B3D7BE /* navbar-public-view.swift in Sources */,
 				2A26E90E2911DC2200B3D7BE /* navbar-home-view.swift in Sources */,
 				2A26E9102911DC9700B3D7BE /* navbar-profile-view.swift in Sources */,
+				2A3E64F9291225DD00E5ED96 /* navbar-call-view.swift in Sources */,
 				2A26E90C2911DC0800B3D7BE /* navbar-sun-view.swift in Sources */,
 				2A26E8E02906534500B3D7BE /* SunShine_AppApp.swift in Sources */,
 				2A26E90A2911DBDD00B3D7BE /* navbar-inbox-view .swift in Sources */,

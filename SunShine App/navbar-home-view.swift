@@ -9,7 +9,7 @@ import SwiftUI
 
 struct navbar_home_view: View {
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan, Color.mint]),
+        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan, Color.green, Color.mint,Color.red]),
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
         .ignoresSafeArea(.all, edges:.all)
