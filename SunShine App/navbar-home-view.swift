@@ -9,7 +9,18 @@ import SwiftUI
 
 struct navbar_home_view: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan, Color.mint]),
+                       startPoint: .topLeading,
+                       endPoint: .bottomTrailing)
+        .ignoresSafeArea(.all, edges:.all)
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading){
+                Image("ic-navbar-inapplogo")
+               }
+            ToolbarItem(placement: .navigationBarTrailing){
+                Image("ic-navbar-call")
+            }
+            }
     }
 }
 
