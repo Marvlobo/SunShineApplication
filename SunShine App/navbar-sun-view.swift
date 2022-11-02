@@ -13,6 +13,14 @@ struct navbar_sun_view: View {
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
         .ignoresSafeArea(.all, edges:.all)
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading){
+                Image("ic-navbar-inapplogo")
+               }
+            ToolbarItem(placement: .navigationBarTrailing){
+                Image("ic-navbar-call")
+            }
+            }
     }
 }
 

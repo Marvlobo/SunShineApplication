@@ -9,10 +9,18 @@ import SwiftUI
 
 struct navbar_profile_view: View {
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan, Color.green, Color.mint,Color.red]),
+        LinearGradient(gradient: Gradient(colors: [Color.red]),
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
         .ignoresSafeArea(.all, edges:.all)
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading){
+                Image("ic-navbar-inapplogo")
+               }
+            ToolbarItem(placement: .navigationBarTrailing){
+                Image("ic-navbar-call")
+            }
+            }
     }
 }
 

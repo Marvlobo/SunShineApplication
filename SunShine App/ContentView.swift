@@ -17,22 +17,30 @@ struct ContentView: View {
                     Image("ic-navbar-home")
                         .renderingMode(.template)
                 }
-            navbar_public_view()
+            NavigationView{
+                navbar_public_view()
+            }
                 .tabItem{
                     Image("ic-navbar-public")
                         .renderingMode(.template)
                 }
-            navbar_sun_view()
+            NavigationView{
+                navbar_sun_view()
+            }
                 .tabItem{
                     Image("ic-navbar-sun")
                         .renderingMode(.template)
                 }
-            navbar_inbox_view_()
+            NavigationView{
+                navbar_inbox_view_()
+            }
                 .tabItem{
                     Image("ic-navbar-inbox")
                         .renderingMode(.template)
                 }
-            navbar_profile_view()
+            NavigationView{
+                navbar_profile_view()
+            }
                 .tabItem{
                     Image("ic-navbar-person")
                         .renderingMode(.template)
