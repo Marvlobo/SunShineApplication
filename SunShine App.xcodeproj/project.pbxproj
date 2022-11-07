@@ -20,6 +20,8 @@
 		2A26E9102911DC9700B3D7BE /* navbar-profile-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26E90F2911DC9700B3D7BE /* navbar-profile-view.swift */; };
 		2A26E9122911DCAF00B3D7BE /* navbar-public-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26E9112911DCAF00B3D7BE /* navbar-public-view.swift */; };
 		2A3E64F9291225DD00E5ED96 /* navbar-call-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */; };
+		2A7A1BEC2918D128009AEEC4 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A1BEB2918D128009AEEC4 /* CameraService.swift */; };
+		2A7A1BEE2918D1FC009AEEC4 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		2A26E90F2911DC9700B3D7BE /* navbar-profile-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "navbar-profile-view.swift"; sourceTree = "<group>"; };
 		2A26E9112911DCAF00B3D7BE /* navbar-public-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "navbar-public-view.swift"; sourceTree = "<group>"; };
 		2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "navbar-call-view.swift"; sourceTree = "<group>"; };
+		2A7A1BEB2918D128009AEEC4 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		2AE093D72918C90D007AFDF7 /* SunShine-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SunShine-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +111,10 @@
 		2A26E8DE2906534400B3D7BE /* SunShine App */ = {
 			isa = PBXGroup;
 			children = (
+				2AE093D72918C90D007AFDF7 /* SunShine-App-Info.plist */,
 				2A26E8DF2906534500B3D7BE /* SunShine_AppApp.swift */,
+				2A7A1BEB2918D128009AEEC4 /* CameraService.swift */,
+				2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */,
 				2A26E8E12906534500B3D7BE /* ContentView.swift */,
 				2A26E9092911DBDD00B3D7BE /* navbar-inbox-view .swift */,
 				2A26E90D2911DC2200B3D7BE /* navbar-home-view.swift */,
@@ -275,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7A1BEC2918D128009AEEC4 /* CameraService.swift in Sources */,
 				2A26E8E22906534500B3D7BE /* ContentView.swift in Sources */,
 				2A26E9122911DCAF00B3D7BE /* navbar-public-view.swift in Sources */,
+				2A7A1BEE2918D1FC009AEEC4 /* CameraView.swift in Sources */,
 				2A26E90E2911DC2200B3D7BE /* navbar-home-view.swift in Sources */,
 				2A26E9102911DC9700B3D7BE /* navbar-profile-view.swift in Sources */,
 				2A3E64F9291225DD00E5ED96 /* navbar-call-view.swift in Sources */,
@@ -443,6 +453,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SunShine App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SunShine-App-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -471,6 +483,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SunShine App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SunShine-App-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
