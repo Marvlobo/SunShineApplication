@@ -23,7 +23,6 @@
 		2A3E64F9291225DD00E5ED96 /* navbar-call-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */; };
 		2A7A1BEC2918D128009AEEC4 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A1BEB2918D128009AEEC4 /* CameraService.swift */; };
 		2A7A1BEE2918D1FC009AEEC4 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */; };
-		E2A7606E2919E35A00980F63 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A7606D2919E35A00980F63 /* Launch Screen.storyboard */; };
 		E2C35B2B2919FE280074BC1B /* Launch Screen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C35B2A2919FE280074BC1B /* Launch Screen1.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		2A7A1BEB2918D128009AEEC4 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		2AE093D72918C90D007AFDF7 /* SunShine-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SunShine-App-Info.plist"; sourceTree = SOURCE_ROOT; };
-		E2A7606D2919E35A00980F63 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../testApp/testApp/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E2C35B2A2919FE280074BC1B /* Launch Screen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen1.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +127,6 @@
 				2A26E90F2911DC9700B3D7BE /* navbar-profile-view.swift */,
 				2A26E9112911DCAF00B3D7BE /* navbar-public-view.swift */,
 				2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */,
-				E2A7606D2919E35A00980F63 /* Launch Screen.storyboard */,
 				E2C35B2A2919FE280074BC1B /* Launch Screen1.storyboard */,
 				2A26E8E32906534600B3D7BE /* Assets.xcassets */,
 				2A26E8E52906534600B3D7BE /* Preview Content */,
@@ -267,7 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C35B2B2919FE280074BC1B /* Launch Screen1.storyboard in Resources */,
-				E2A7606E2919E35A00980F63 /* Launch Screen.storyboard in Resources */,
 				2A26E8E72906534600B3D7BE /* Preview Assets.xcassets in Resources */,
 				2A26E8E42906534600B3D7BE /* Assets.xcassets in Resources */,
 			);

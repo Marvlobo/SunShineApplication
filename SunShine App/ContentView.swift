@@ -47,7 +47,7 @@ struct ContentView: View {
                         .renderingMode(.template)
                }
             
-        }
+        }.preferredColorScheme(.dark)
                 
     }
         
