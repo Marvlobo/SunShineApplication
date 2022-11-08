@@ -21,11 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient1" translatesAutoresizingMaskIntoConstraints="NO" id="AN6-gK-xRx">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AN6-gK-xRx">
+                                <rect key="frame" x="-5" y="-15.666666666666686" width="400" height="875.33333333333348"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="390" id="O65-7B-wyP"/>
-                                    <constraint firstAttribute="height" constant="844" id="VZ5-xT-jLe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="O65-7B-wyP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="875" id="VZ5-xT-jLe"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-lD-MjQ">
