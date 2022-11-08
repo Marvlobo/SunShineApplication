@@ -39,7 +39,6 @@ struct navbar_sun_view: View {
             }
         }
     }
-    
     struct navbar_sun_view_Previews: PreviewProvider {
         static var previews: some View {
             navbar_sun_view()
