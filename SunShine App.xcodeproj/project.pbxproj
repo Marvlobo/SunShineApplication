@@ -23,6 +23,7 @@
 		2A3E64F9291225DD00E5ED96 /* navbar-call-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */; };
 		2A7A1BEC2918D128009AEEC4 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A1BEB2918D128009AEEC4 /* CameraService.swift */; };
 		2A7A1BEE2918D1FC009AEEC4 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */; };
+		E2A7606E2919E35A00980F63 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A7606D2919E35A00980F63 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2A7A1BEB2918D128009AEEC4 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		2AE093D72918C90D007AFDF7 /* SunShine-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SunShine-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E2A7606D2919E35A00980F63 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../testApp/testApp/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				2A26E90F2911DC9700B3D7BE /* navbar-profile-view.swift */,
 				2A26E9112911DCAF00B3D7BE /* navbar-public-view.swift */,
 				2A3E64F8291225DD00E5ED96 /* navbar-call-view.swift */,
+				E2A7606D2919E35A00980F63 /* Launch Screen.storyboard */,
 				2A26E8E32906534600B3D7BE /* Assets.xcassets */,
 				2A26E8E52906534600B3D7BE /* Preview Content */,
 			);
@@ -260,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A7606E2919E35A00980F63 /* Launch Screen.storyboard in Resources */,
 				2A26E8E72906534600B3D7BE /* Preview Assets.xcassets in Resources */,
 				2A26E8E42906534600B3D7BE /* Assets.xcassets in Resources */,
 			);
@@ -455,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SunShine App/Preview Content\"";
+				DEVELOPMENT_TEAM = 87KB8GFYCS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SunShine-App-Info.plist";
@@ -462,6 +467,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SunShine App/Preview Content\"";
+				DEVELOPMENT_TEAM = 87KB8GFYCS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SunShine-App-Info.plist";
@@ -492,6 +499,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
