@@ -8,24 +8,41 @@
 import SwiftUI
 
 struct navbar_sun_view: View {
+    @State private var capturedImage: UIImage? = nil
+    @State private var isCustomCameraViewPresented = false
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan, Color.green, Color.mint,Color.red]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .ignoresSafeArea(.all, edges:.all)
-        .toolbar{
-            ToolbarItem(placement: .navigationBarLeading){
-                Image("ic-navbar-inapplogo")
-               }
-            ToolbarItem(placement: .navigationBarTrailing){
-                Image("ic-navbar-call")
+        ZStack{
+            if capturedImage != nil{
+                Image(uiImage: capturedImage!)
+                    .resizable()
+                    .scaledToFit()
+                    .ignoresSafeArea()
+            }else{
+                Color(UIColor.systemBackground)
             }
+            VStack{
+                Spacer()
+                Button(action:{
+                    isCustomCameraViewPresented.toggle()
+                },label:{
+                    Image(systemName: "camera.fill")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.black)
+                        .foregroundColor(.white)
+                        .clipShape(Circle())
+                })
+                .padding(.bottom)
+                .sheet(isPresented: $isCustomCameraViewPresented, content:{
+                    CustomCameraView(capturedImage: $capturedImage)
+                })
             }
+        }
     }
-}
-
-struct navbar_sun_view_Previews: PreviewProvider {
-    static var previews: some View {
-        navbar_sun_view()
+    
+    struct navbar_sun_view_Previews: PreviewProvider {
+        static var previews: some View {
+            navbar_sun_view()
+        }
     }
 }
