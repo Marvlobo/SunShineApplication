@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A00DD2D2919CC7E00764885 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DD2C2919CC7E00764885 /* CustomCameraView.swift */; };
 		2A26E8E02906534500B3D7BE /* SunShine_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26E8DF2906534500B3D7BE /* SunShine_AppApp.swift */; };
 		2A26E8E22906534500B3D7BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26E8E12906534500B3D7BE /* ContentView.swift */; };
 		2A26E8E42906534600B3D7BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A26E8E32906534600B3D7BE /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A00DD2C2919CC7E00764885 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		2A26E8DC2906534400B3D7BE /* SunShine App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SunShine App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A26E8DF2906534500B3D7BE /* SunShine_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunShine_AppApp.swift; sourceTree = "<group>"; };
 		2A26E8E12906534500B3D7BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				2A26E8DF2906534500B3D7BE /* SunShine_AppApp.swift */,
 				2A7A1BEB2918D128009AEEC4 /* CameraService.swift */,
 				2A7A1BED2918D1FC009AEEC4 /* CameraView.swift */,
+				2A00DD2C2919CC7E00764885 /* CustomCameraView.swift */,
 				2A26E8E12906534500B3D7BE /* ContentView.swift */,
 				2A26E9092911DBDD00B3D7BE /* navbar-inbox-view .swift */,
 				2A26E90D2911DC2200B3D7BE /* navbar-home-view.swift */,
@@ -290,6 +293,7 @@
 				2A26E90E2911DC2200B3D7BE /* navbar-home-view.swift in Sources */,
 				2A26E9102911DC9700B3D7BE /* navbar-profile-view.swift in Sources */,
 				2A3E64F9291225DD00E5ED96 /* navbar-call-view.swift in Sources */,
+				2A00DD2D2919CC7E00764885 /* CustomCameraView.swift in Sources */,
 				2A26E90C2911DC0800B3D7BE /* navbar-sun-view.swift in Sources */,
 				2A26E8E02906534500B3D7BE /* SunShine_AppApp.swift in Sources */,
 				2A26E90A2911DBDD00B3D7BE /* navbar-inbox-view .swift in Sources */,
