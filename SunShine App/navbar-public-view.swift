@@ -9,9 +9,9 @@ import SwiftUI
 
 struct navbar_public_view: View {
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.yellow]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
+        LinearGradient(gradient: Gradient(colors: [Color("Gradient3.1"), Color("Gradient3.2")]),
+                       startPoint: .leading,
+                       endPoint: .trailing)
         .ignoresSafeArea(.all, edges:.all)
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading){
