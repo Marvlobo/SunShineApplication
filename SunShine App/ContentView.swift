@@ -48,9 +48,7 @@ struct ContentView: View {
                }
             
         }.preferredColorScheme(.dark)
-                
     }
-        
 }
 
 struct ContentView_Previews: PreviewProvider {
