@@ -22,14 +22,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AN6-gK-xRx">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="875"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="875"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="O65-7B-wyP"/>
+                                    <constraint firstAttribute="width" secondItem="AN6-gK-xRx" secondAttribute="height" multiplier="78:175" id="AQk-a4-oP7"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="875" id="VZ5-xT-jLe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="sgw-N1-P9e"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-lD-MjQ">
-                                <rect key="frame" x="50" y="154.33333333333334" width="300" height="266.66666666666663"/>
+                                <rect key="frame" x="45" y="154.33333333333334" width="300" height="266.66666666666663"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qbF-lD-MjQ" secondAttribute="height" multiplier="9:8" id="j4G-fu-oLR"/>
@@ -37,24 +38,24 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning User!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2w-JQ-8rN">
-                                <rect key="frame" x="54.333333333333343" y="569" width="291.66666666666663" height="37.333333333333371"/>
+                                <rect key="frame" x="49.333333333333343" y="569" width="291.66666666666663" height="37.333333333333371"/>
                                 <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="32"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Gai-y3-Zmf"/>
+                        <viewLayoutGuide key="safeArea" id="SDy-qC-ULC"/>
                         <color key="backgroundColor" name="LaunchScreenBackground"/>
                         <color key="tintColor" name="LaunchScreenBackground"/>
                         <constraints>
-                            <constraint firstItem="t2w-JQ-8rN" firstAttribute="centerX" secondItem="djY-87-D2c" secondAttribute="centerX" id="3fs-3G-n5U"/>
-                            <constraint firstItem="AN6-gK-xRx" firstAttribute="leading" secondItem="djY-87-D2c" secondAttribute="leading" id="FRg-ro-2bn"/>
+                            <constraint firstItem="t2w-JQ-8rN" firstAttribute="centerX" secondItem="SDy-qC-ULC" secondAttribute="centerX" id="3fs-3G-n5U"/>
+                            <constraint firstItem="AN6-gK-xRx" firstAttribute="top" secondItem="djY-87-D2c" secondAttribute="top" id="A4D-b3-wuq"/>
+                            <constraint firstItem="AN6-gK-xRx" firstAttribute="leading" secondItem="djY-87-D2c" secondAttribute="leading" id="IRM-SO-RaA"/>
                             <constraint firstItem="t2w-JQ-8rN" firstAttribute="centerY" secondItem="djY-87-D2c" secondAttribute="centerY" constant="150" id="L6r-F6-K9d"/>
-                            <constraint firstAttribute="trailing" secondItem="AN6-gK-xRx" secondAttribute="trailing" id="M0R-mj-U1s"/>
-                            <constraint firstAttribute="bottom" secondItem="AN6-gK-xRx" secondAttribute="bottom" id="X0P-jY-i1l"/>
-                            <constraint firstItem="AN6-gK-xRx" firstAttribute="top" secondItem="djY-87-D2c" secondAttribute="top" id="Zat-Oe-0On"/>
-                            <constraint firstItem="qbF-lD-MjQ" firstAttribute="centerX" secondItem="djY-87-D2c" secondAttribute="centerX" id="kRC-jB-X0F"/>
-                            <constraint firstItem="AN6-gK-xRx" firstAttribute="centerX" secondItem="djY-87-D2c" secondAttribute="centerX" id="xtz-MT-ZsA"/>
+                            <constraint firstAttribute="bottom" secondItem="AN6-gK-xRx" secondAttribute="bottom" id="P1j-OY-53R"/>
+                            <constraint firstItem="AN6-gK-xRx" firstAttribute="trailing" secondItem="djY-87-D2c" secondAttribute="trailing" id="dvf-TC-qfL"/>
+                            <constraint firstItem="qbF-lD-MjQ" firstAttribute="centerX" secondItem="SDy-qC-ULC" secondAttribute="centerX" id="kRC-jB-X0F"/>
+                            <constraint firstItem="AN6-gK-xRx" firstAttribute="centerX" secondItem="SDy-qC-ULC" secondAttribute="centerX" id="xtz-MT-ZsA"/>
                             <constraint firstItem="AN6-gK-xRx" firstAttribute="centerY" secondItem="djY-87-D2c" secondAttribute="centerY" id="zSN-zU-5KT"/>
                             <constraint firstItem="qbF-lD-MjQ" firstAttribute="centerY" secondItem="djY-87-D2c" secondAttribute="centerY" constant="-150" id="znN-Y3-2X6"/>
                         </constraints>
