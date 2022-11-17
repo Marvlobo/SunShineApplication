@@ -25,8 +25,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="875"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AN6-gK-xRx" secondAttribute="height" multiplier="78:175" id="AQk-a4-oP7"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="875" id="VZ5-xT-jLe"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="sgw-N1-P9e"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-lD-MjQ">

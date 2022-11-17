@@ -7,21 +7,79 @@
 
 import SwiftUI
 
-struct navbar_home_view: View {
-    var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color("Gradient1.1"), Color("Gradient1.2"), Color("Gradient1.3")]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .ignoresSafeArea(.all, edges:.all)
-        .toolbar{
-            ToolbarItem(placement: .navigationBarLeading){
-                Image("ic-navbar-inapplogo")
-               }
-            ToolbarItem(placement: .navigationBarTrailing){
-                Image("ic-navbar-call")
-            }
-            }
+struct Quote: Identifiable, Codable {
+    let id = UUID()
+    var author: String?
+    var text: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case author, text
     }
+}
+
+struct navbar_home_view: View {
+    @State var quotes = [Quote]()
+    @State var randNum = 0
+    
+    var body: some View {
+        ZStack() {
+            LinearGradient(gradient: Gradient(colors: [Color("Gradient1.1"), Color("Gradient1.2"), Color("Gradient1.3")]),
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing)
+            .ignoresSafeArea(.all, edges:.all)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                    Image("ic-navbar-inapplogo")
+                }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Image("ic-navbar-call")
+                }
+            }
+            VStack() {
+                Spacer()
+                VStack(alignment: .center, spacing: 10) {
+                    Text("Quote of the Day")
+                        .foregroundColor(.white)
+                        .font(.custom("Montserrat-VariableFont_wght", size: 28))
+                    
+                    if quotes.count > 0 {
+                        Text(quotes[randNum].text ?? "no text")
+                        Text(quotes[randNum].author ?? "no author").foregroundColor(.blue)
+                    }else{
+                        ProgressView()
+                    }
+                    
+                    Button("New Quote") {
+                        randNum = Int.random(in: 0..<quotes.count)
+                    }.buttonStyle(.bordered)
+                }.padding([.leading, .trailing], 20)
+                    .task {
+                        await loadData()
+                        randNum = Int.random(in: 0..<quotes.count)
+                }
+            }
+        }
+    }
+    
+    func loadData() async{
+        guard let url = URL(string: "https://type.fit/api/quotes") else {
+            print("Invalid URL")
+            return
+        }
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+                quotes = try JSONDecoder().decode([Quote].self, from: data)
+            //print("The count is",quotes.count)
+            //numQuotes = quotes.count
+            //print("numQuotes is",numQuotes)
+            //print(quotes)
+            //print(quotes[0].text ?? "Error")
+        } catch {
+            print(error)
+            }
+        }
+    
 }
 
 struct navbar_home_view_Previews: PreviewProvider {
