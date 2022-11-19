@@ -39,12 +39,13 @@ struct navbar_home_view: View {
                 Spacer()
                 VStack(alignment: .center, spacing: 10) {
                     Text("Quote of the Day")
-                        .foregroundColor(.white)
                         .font(.custom("Montserrat-VariableFont_wght", size: 28))
+                        .foregroundColor(.gray)
+                        .padding(.top, 10)
                     
                     if quotes.count > 0 {
-                        Text(quotes[randNum].text ?? "no text")
-                        Text(quotes[randNum].author ?? "no author").foregroundColor(.blue)
+                        Text(quotes[randNum].text ?? "no text").font(.custom("Montserrat-VariableFont_wght", size: 18)).foregroundColor(.black)
+                        Text(quotes[randNum].author ?? "no author").font(.custom("Montserrat-VariableFont_wght", size: 14)).foregroundColor(.blue)
                     }else{
                         ProgressView()
                     }
@@ -52,7 +53,10 @@ struct navbar_home_view: View {
                     Button("New Quote") {
                         randNum = Int.random(in: 0..<quotes.count)
                     }.buttonStyle(.bordered)
-                }.padding([.leading, .trailing], 20)
+                }   .frame(width: 300)
+                    .padding([.leading, .trailing, .bottom], 20)
+                    .background(LinearGradient(gradient: Gradient(colors: [.white, .white.opacity(0)]), startPoint: .top, endPoint: .bottom))
+                    .cornerRadius(20)
                     .task {
                         await loadData()
                         randNum = Int.random(in: 0..<quotes.count)
