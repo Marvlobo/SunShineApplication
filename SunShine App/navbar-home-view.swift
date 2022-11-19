@@ -23,7 +23,7 @@ struct navbar_home_view: View {
     
     var body: some View {
         ZStack() {
-            LinearGradient(gradient: Gradient(colors: [Color("Gradient1.1"), Color("Gradient1.2"), Color("Gradient1.3")]),
+            LinearGradient(gradient: Gradient(colors: [Color("Gradient1.1"), Color("Gradient1.2")/*, Color("Gradient1.3")*/]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
             .ignoresSafeArea(.all, edges:.all)
@@ -42,6 +42,9 @@ struct navbar_home_view: View {
                         .font(.custom("Montserrat-VariableFont_wght", size: 28))
                         .foregroundColor(.gray)
                         .padding(.top, 10)
+                    Divider()
+                        .frame(height: 2.5)
+                        .overlay(Color("Gradient1.2"))
                     
                     if quotes.count > 0 {
                         Text(quotes[randNum].text ?? "no text").font(.custom("Montserrat-VariableFont_wght", size: 18)).foregroundColor(.black)
